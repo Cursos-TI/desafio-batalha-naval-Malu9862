@@ -13,3 +13,11 @@ int main() {
                 tabuleiro[linha_horizontal][coluna_horizontal + i] = 3; // Marca a posição do navio
             }
         }
+
+         // Navio Vertical
+    int linha_vertical = 5, coluna_vertical = 6;
+    for (int i = 0; i < 3; i++) {
+        if (linha_vertical + i < TAM_TABULEIRO) {
+            tabuleiro[linha_vertical + i][coluna_vertical] = 3; // Marca a posição do navio
+        }
+    }
