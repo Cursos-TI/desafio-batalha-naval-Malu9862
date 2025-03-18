@@ -21,3 +21,21 @@ int main() {
             tabuleiro[linha_vertical + i][coluna_vertical] = 3; // Marca a posição do navio
         }
     }
+
+     // Exibe o tabuleiro
+     printf("Tabuleiro de Batalha Naval:\n");
+     printf("  "); // Espaço para alinhamento
+     for (char j = 'A'; j <= 'J'; j++) { 
+         printf("%c ", j);
+     }
+     printf("\n");
+     for (int i = 1; i <= TAM_TABULEIRO; i++) {
+         printf("%d ", i);
+         for (int j = 0; j < TAM_TABULEIRO; j++) {
+             printf("%d ", tabuleiro[i - 1][j]); 
+         }
+         printf("\n");
+     }
+ 
+     return 0;
+ }
